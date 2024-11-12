@@ -3,34 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ABOUT ARUNKARTHICK</title>
+    <title>ABOUT ARUNKARTHICK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #d78dc8;
-            color: #0c0202;
+        /* Basic Reset */
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        /* Body and background styling */
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #d78dc8, #f1c6e3);
+            color: #2e0d0d;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        /* Center content with padding */
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #ee94be;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            transform: scale(1.05);
+        }
+
         h1 {
-            color: #f352a5;
             text-align: center;
+            color: #f352a5;
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        /* Styling the paragraphs with the diamond symbols */
         p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 20px;
             text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #2e0d0d;
+            position: relative;
         }
+
+        p::before {
+            content: "◆"; /* Diamond symbol before text */
+            position: absolute;
+            left: -25px;
+            top: 0;
+            font-size: 30px;
+            color: #f352a5;
+        }
+
+        p::after {
+            content: "◆"; /* Diamond symbol after text */
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            font-size: 30px;
+            color: #f352a5;
+        }
+
+        /* Image Styling */
         img {
             display: block;
             margin: 0 auto;
+            width: 300px;
             border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button to scroll to top */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f352a5;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            transition: background-color 0.3s ease;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #ff6380;
+        }
+
+        /* Smooth scroll to top */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
-    <h1>◆ Arunkarthick and Huge Diamond's Love Story ◆</h1>
-    <img width="200px" src="20240221_151059.jpg" alt="">
-    <p>In the bustling town of Salem, there lived a young man named Arunkarthick. He was known for his kind heart and his love for adventure. One day, while exploring the vibrant markets, he stumbled upon a jewelry shop. There, amidst the glittering gems, he saw the most beautiful diamond he had ever laid eyes on. It was so magnificent that he whimsically named it “Huge Diamond.” As fate would have it, the diamond was not just a gem but a symbol of a beautiful girl named Huge Diamond. She was the daughter of the jeweler, and her radiant smile could light up the darkest of days. Arunkarthick was instantly captivated by her charm and grace. Arunkarthick began visiting the shop frequently, not just to admire the diamond but to see Huge Diamond. They started talking, and soon, their conversations turned into deep, meaningful exchanges. They discovered they shared a love for nature, music, and dreams of traveling the world. One evening, as the sun set over the hills, Arunkarthick gathered his courage and confessed his feelings to Huge Diamond. To his delight, she felt the same way. Their love blossomed like a beautiful flower, and they became inseparable. They spent their days exploring the town, sharing laughter and dreams. Arunkarthick would often surprise Huge Diamond with little adventures, from picnics in the countryside to stargazing on clear nights. Their love story was filled with joy, laughter, and a promise to always be there for each other. Years passed, and their bond only grew stronger. Arunkarthick and Huge Diamond decided to travel the world together, fulfilling their shared dream. They visited breathtaking places, created countless memories, and their love story became an inspiration to everyone who knew them. And so, the tale of Arunkarthick and Huge Diamond reminds us that true love is not just about finding someone who completes you but about sharing dreams, adventures, and a lifetime of happiness together.</p>
+    <div class="content">
+        <h1>◆ Arunkarthick and Huge Diamond's Love Story ◆</h1>
+        <img src="20240221_151059.jpg" alt="Arunkarthick and Huge Diamond in love">
+        <p>In the bustling town of Salem, there lived a young man named Arunkarthick. He was known for his kind heart and his love for adventure. One day, while exploring the vibrant markets, he stumbled upon a jewelry shop. There, amidst the glittering gems, he saw the most beautiful diamond he had ever laid eyes on. It was so magnificent that he whimsically named it “Huge Diamond.”</p>
+        <p>As fate would have it, the diamond was not just a gem but a symbol of a beautiful girl named Huge Diamond. She was the daughter of the jeweler, and her radiant smile could light up the darkest of days. Arunkarthick was instantly captivated by her charm and grace.</p>
+        <p>Arunkarthick began visiting the shop frequently, not just to admire the diamond but to see Huge Diamond. They started talking, and soon, their conversations turned into deep, meaningful exchanges. They discovered they shared a love for nature, music, and dreams of traveling the world.</p>
+        <p>One evening, as the sun set over the hills, Arunkarthick gathered his courage and confessed his feelings to Huge Diamond. To his delight, she felt the same way. Their love blossomed like a beautiful flower, and they became inseparable. They spent their days exploring the town, sharing laughter and dreams.</p>
+        <p>Years passed, and their bond only grew stronger. Arunkarthick and Huge Diamond decided to travel the world together, fulfilling their shared dream. They visited breathtaking places, created countless memories, and their love story became an inspiration to everyone who knew them.</p>
+        <p>And so, the tale of Arunkarthick and Huge Diamond reminds us that true love is not just about finding someone who completes you but about sharing dreams, adventures, and a lifetime of happiness together.</p>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+
+    <script>
+        // Show the scroll-to-top button when the user scrolls down
+        window.onscroll = function() {
+            let scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        document.getElementById('scrollTopBtn').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
 </html>
